@@ -49,6 +49,13 @@ export default async function Home()
 
             ))}
           </content>
+          <content className="mt-10 space-y-8"  id="experience-ID">
+            <div class="mobile-nav z-40 testing ">Skills</div>
+            {experiences?.map((skills, index) => (
+                        <Experience id={index} experience={skills}/>
+
+            ))}
+          </content>
         
           <content className="mt-10 space-y-8 lg:mb-20 mb-8" id="project-ID">
               <div class="mobile-nav z-40 testing">projects</div>
